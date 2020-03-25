@@ -11,4 +11,6 @@ app.get('/jeer.txt', function(req, res){
 	res.send('negative to say');
 });
 
-var server = app.listen(8080);
+var server = app.listen(8080, function(){
+	console.log('listening on port 8080');
+});
